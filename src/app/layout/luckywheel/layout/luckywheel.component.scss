@@ -1,38 +1,56 @@
 .content-landing {
-  padding: 47px 65px;
-  width: 100%;
+  padding: 40px 65px;
+  text-align: center;
+  .img-landing {
+    width: 106%;
+  }
+  .title-note {
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: 25%;
+    @media (max-width: 480px) {
+      margin-bottom: 45%;
+    }
+    .title-landing {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: #20336B;
+      margin: 0;
+    }
+    .note-landing {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #434343;
+      margin: 0;
+      margin-top: 4%;
+  }
+  }
 }
-.note-landing {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #434343;
-}
-.title-landing {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #20336B;
-}
+
 .btn-landing {
   background: #FFFFFF;
   border: 1px solid #057DDA;
   box-sizing: border-box;
   border-radius: 47px;
   height: 40px;
-  width: auto;
   margin-top: 123px;
   color: #057DDA;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 19px;
+  margin: 0;
 }
-.btn-100 {
-  width: 100%;
+.btn-95 {
+  width: 95%;
+}
+.btn-primary {
+  background: #057DDA;
+  color: #FFFFFF;
 }
 .btn-40 {
   width: 45%;
@@ -48,13 +66,12 @@
 .progress {
   position: absolute;
   display: inline-block;
-  width: 65%;
+  width: 80%;
   height: 20px;
   border: 1px solid #3C5A99;
   background: #161434;
   border-radius: 40px;
   z-index: 1;
-  margin: auto 67px;
   bottom: 10%;
   .bar {
     bottom: 10%;
@@ -70,25 +87,30 @@
     box-shadow: 0px 45px 50px rgba(0, 0, 0, 0.25); 
   }
   .bars {
-    background-color:#FFF300;
     background-image: url("../../../../assets/images/luckywheel/step4/progress.svg");
   }
 }
 .img-name {
   height: auto;
   position: absolute;
-  width: 54%;
-  right: 0;
-  top: 22%;
-  left: 5%;
+  width: 67.4%;
+  top: 23.2%;
+  left: 2.7%;
 }
 .img-logo {
-  width: 40%;
+  z-index: 1;
+  width: 22%;
+  position: absolute;
+  top: 18%;
+  left: 22%;
 }
 .img-wheel {
-  height: 50%;
   position: absolute;
-  width: auto;
   right: 0;
-  top: 15%;
+  top: 10%;
+  height: 85%;
+  @media (max-width: 480px) {
+    top: 13%;
+    height: 65%;    
+  }
 }

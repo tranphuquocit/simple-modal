@@ -1,0 +1,27 @@
+
+.contain {
+    padding: 0.5em;
+    text-align: center;
+    height: 98%;
+}
+
+.inputText {
+    // border-radius: 5%;
+    background: #f8d39c;
+    height: 2.5em;
+    // margin-bottom: 2% ;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #935400;
+    width: 90%;
+}
+
+.border {
+    border-radius: 5px;
+    // border-left: none;
+    // border-right: none;
+    border: none;
+    border-top: 3px solid #e0b173;
+    border-bottom: 3px solid #ffe4bc;
+}

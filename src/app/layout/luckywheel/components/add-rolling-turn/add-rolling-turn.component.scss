@@ -1,0 +1,16 @@
+.contain {
+    // border-radius: 9%;
+    // width: 95%;
+    height: 98%;
+    // background-color: white;
+    // margin: 2.5%;
+    padding: 0.5em;
+    padding-bottom: 0;
+    text-align: center;
+
+    input::placeholder {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 500;
+    }
+}

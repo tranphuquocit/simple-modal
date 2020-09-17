@@ -1,0 +1,70 @@
+.img-header {
+  width: 100%;
+  height: auto;
+}
+.content-game {
+  margin-top: -5px;
+  .title-top-winner {
+    position: absolute;
+    color: white;
+    font-family: Roboto;
+    font-weight: 100;
+  }
+  .img-bggame {
+    width: 100%;
+    height: 100%;
+  }
+  .img-wheel {
+    position: absolute;
+    height: auto;
+    left: 25%;
+    width: 50%;
+    top: 30%;
+    @media (max-width: 480px) {
+      top: 25%; 
+      left: 12%;
+      width: 76%; 
+    }
+  }
+  .btn-time-play {
+    position: absolute;
+    width: 13%;
+    bottom: 15%;
+    left: 13%;
+    @media (max-width: 480px) {
+      width: 19%;
+      bottom: 11.4%;
+      left: 3.6%;
+    }
+  }
+  .title-time-play {
+    position: absolute;
+    color: white;
+    border-radius: 4px;
+    padding: 11px 17px;
+    left: 42%;
+    bottom: 17%;
+    height: 30px;
+    display: flex;
+    background: #005B6C;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 14px;
+    @media (max-width: 480px) {
+      left: 31%;  
+      bottom: 13%; 
+    }
+  }
+  .btn-action {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    left: 15%;
+    text-align: center;
+    align-items: center;
+    .action {
+      width: 75%;
+    }
+  }
+}

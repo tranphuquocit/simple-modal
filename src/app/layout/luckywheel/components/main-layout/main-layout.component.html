@@ -1,0 +1,32 @@
+<div>
+  <img [src]="srcHeaderBackground" alt="" class="img-header">
+  <div class="content-game">
+    <div class="background-game">
+      <div class="title-top-winner">
+        <label>Pham Tien Chung trúng 1 cây kẹo mút</label>
+      </div>
+      <img class="img-wheel" src="{{imageAsset}}game_wheel.png" alt="" srcset="">
+      <div class="time-play">
+        <img class="btn-time-play" (click)="showModalAdd()" src="{{imageAsset}}ic_game_more_turn@3x.png" alt="">
+      </div>
+      <div class="title-time-play">
+        <label class="label">Bạn có {{time_play}} lượt quay</label>
+      </div>
+      <div class="btn-action">
+        <div>
+          <img class="action" (click)="showModal()" src="{{imageAsset}}btn1.png" alt="">
+        </div>
+        <div>
+          <img class="action" src="{{imageAsset}}btn2.png" alt="">
+        </div>
+        <div>
+          <img class="action" src="{{imageAsset}}btn3.png" alt="">
+        </div>
+        <div>
+          <img class="action" src="{{imageAsset}}btn4.png" alt="">
+        </div>
+      </div>
+      <img class="img-bggame" [src]="srcMainBackground" alt="">
+    </div>
+  </div>
+</div>

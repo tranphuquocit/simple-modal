@@ -1,21 +1,28 @@
-<!-- <div class="content-landing">
+<!-- <div class="content-landing" *ngIf="!isLoadGame">
   <div class="img-landing">
     <img src="{{step[index].image2x}}" alt="">
   </div>
-  <div>
+  <div class="title-note">
     <p class="title-landing">{{step[index].title}}</p>
     <p class="note-landing">{{step[index].note}}</p>
   </div>
-  <div>
+  <div style="text-align: center;">
     <input *ngIf="step[index].button.length > 1" class="btn-landing btn-40" type="button" value="{{step[index].button[1]?.title}}" (click)="prev(index)">
-    <input class="btn-landing" [ngClass]="step[index].button.length > 1 ? 'btn-40' : 'btn-100'" type="button" value="{{step[index].button[0].title}}" (click)="next(index)">
+    <input class="btn-landing" [ngClass]="step[index].button.length > 1 ? index === 1 ? 'btn-40': 'btn-40 btn-primary ' : 'btn-95'"
+    type="button" value="{{step[index].button[0].title}}" (click)="next(index)">
   </div>
-</div> -->
-<img src="../../../../assets/images/luckywheel/step4/background.png" alt=""
-style="height: 100%; position: absolute; width: 100%;">
-<img src="../../../../assets/images/luckywheel/step4/ic_logo_icheck.png" alt="" class="img-logo">
-<img src="../../../../assets/images/luckywheel/step4/name.png" alt="" class="img-name">
-<img src="../../../../assets/images/luckywheel/step4/wheel.png" alt="" class="img-wheel">
-<div class="progress">
-  <div class="bar shadow bars"  style="width: 34%; transition-duration: 2s;"></div>
 </div>
+<div *ngIf="isLoadGame  && randomWidth !== 100">
+  <img src="{{imageAsset}}{{loadGame.background}}" alt=""
+  style="height: 100%; position: absolute; width: 100%;">
+  <img src="{{imageAsset}}{{loadGame.logo}}" alt="" class="img-logo">
+  <img src="{{imageAsset}}{{loadGame.title}}" alt="" class="img-name">
+  <img src="{{imageAsset}}{{loadGame.wheel}}" alt="" class="img-wheel">
+  <div style="padding: 10%;">
+    <div class="progress">
+      <div class="bar shadow bars" #progress [ngStyle]="{'width.%': randomWidth}"></div>
+    </div>
+  </div>
+</div>
+<luckywheel-main  *ngIf="isLoadGame && randomWidth == 100"></luckywheel-main> -->
+<luckywheel-main></luckywheel-main>

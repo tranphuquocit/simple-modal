@@ -1,3 +1,8 @@
+export const API = {
+  urlDev: 'https://api.dev.icheck.vn',
+  public: '/api/business/public/loyalty/',
+  auth: '/api/business/loyalty/'
+}
 export const STEP_LANDING_PAGE = [
   {
     image: '../../../../assets/images/luckywheel/step1/group_2804.png',
