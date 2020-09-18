@@ -20,7 +20,7 @@ export class LuckyWheelMainLayoutComponent implements OnInit {
   time_play: number = 0;
   phone: string = '';
   ngOnInit() {
-    this.luckyWheelService.getCampaign({ target: '53yvrmo32e', phone: null })
+    this.luckyWheelService.getCampaign({ target: 'http://cd-dev.qcheck.vn?q=1600316828972', phone: null })
     .subscribe((res: any) => {
       this.srcMainBackground = res.background_rotation.small;
       this.srcHeaderBackground = res.header_image_rotation.small;
@@ -42,7 +42,7 @@ export class LuckyWheelMainLayoutComponent implements OnInit {
   async showModalAdd() {
     const modal = await this.modalController.create({
       component: AddRollingTurnComponent,
-      cssClass: 'my-custom-class',
+      cssClass: 'add-time-play-scan',
     });
     return await modal.present();
   }

@@ -1,16 +1,60 @@
 .contain {
-    // border-radius: 9%;
-    // width: 95%;
-    height: 98%;
-    // background-color: white;
-    // margin: 2.5%;
-    padding: 0.5em;
-    padding-bottom: 0;
-    text-align: center;
-
-    input::placeholder {
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: 500;
+  text-align: center;
+  padding: 23px 0;
+  .title-modal {
+    width: 62%;
+    left: 19%;
+    position: absolute;
+  }
+  .content-modal {
+    position: absolute;
+    border: 1px dashed #D8D8D8;
+    border-radius: 16px;
+    padding: 7px 6px;
+    top: 20%;
+    height: 58%;
+    width: 70%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    .title-content {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      color: #b9b9b9c7;
+      font-size: 14px;
+      line-height: 18px;
     }
+    .img-content {
+      width: 46%;
+      position: absolute;
+      left: 29%;
+      top: 25%;
+      @media (max-width: 480px) {
+        top: 33%;
+      }
+    }
+  }
+  .btn-modal {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    left: 30%;
+    #camera {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      }
+    @media (max-width: 480px) {
+      bottom: 3%;
+      width: 46%;
+      left: 27%;
+    }
+  }
+  // input::placeholder {
+  //     font-family: Roboto;
+  //     font-style: italic;
+  //     font-weight: 500;
+  // }
 }

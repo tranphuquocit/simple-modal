@@ -1,17 +1,18 @@
 <div class="contain">
-  <div>
+  <div class="title-modal">
     <img src="../../../../../assets/images/luckywheel/step5/add-rolling-turn/ic_game_more_turn_white@2x.png" alt="">
   </div>
-  <div>
-    <ion-row>
-      <ion-label>Quét tem QRcode được dán trên bao bì sản phẩm để nhận thêm lươt quay nhé!
+  <div class="content-modal">
+    <ion-row style="text-align: center;">
+      <ion-label class="title-content">Quét tem QRcode được dán trên bao bì sản phẩm để nhận thêm lươt quay nhé!
       </ion-label>
     </ion-row>
-    <div>
+    <div class="img-content">
       <img src="../../../../../assets/images/luckywheel/step1/group_2804@2x.png" alt="">
     </div>
   </div>
-  <div>
-    <img (click)="dismiss()" src="../../../../../assets/images/luckywheel/step5/add-rolling-turn/btnIsee.png" alt="">
+  <div class="btn-modal">
+    <input (click)="dismiss()" type="file" id="camera" accept="image/*" capture>
+    <img for="camera" src="../../../../../assets/images/luckywheel/step5/add-rolling-turn/btnIsee.png" alt="">
   </div>
 </div>

@@ -24,3 +24,16 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+.add-time-play-scan .modal-wrapper {
+  height: 56%;
+  border-radius: 33px;
+  border: 10px solid #f8d39c;
+  background: white;
+  position: absolute;
+  top: 18%;
+  width: 77%;
+  @media (max-width: 480px) {
+    // top: 33%;
+    width: 86%;
+  }
+}
