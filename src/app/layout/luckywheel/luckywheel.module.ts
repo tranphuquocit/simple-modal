@@ -5,11 +5,16 @@ import { CommonModule } from '@angular/common';
 import { EnterCodeModalComponent, LuckyWheelMainLayoutComponent } from './components';
 import { LuckyWheelService } from './services';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 const COMPONENT = [LuckyWheelMainLayoutComponent, EnterCodeModalComponent];
 const SERVICE = [LuckyWheelService]
 @NgModule({
-  imports: [CommonModule, LuckyWheelRoutingModule, HttpClientModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    LuckyWheelRoutingModule,
+    HttpClientModule],
   declarations: [LuckyWheelComponentPage, ...COMPONENT],
   providers: [...SERVICE]
 })

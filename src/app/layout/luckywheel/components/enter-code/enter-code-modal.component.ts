@@ -12,9 +12,7 @@ export class EnterCodeModalComponent implements OnInit {
   code: string;
   hasErr;
 
-  constructor(
-    private luckywheelService: LuckyWheelService,
-  ) { }
+  constructor() { }
 
 
   ngOnInit() {
@@ -42,9 +40,6 @@ export class EnterCodeModalComponent implements OnInit {
       phone: this.phone,
       code: this.code
     }
-    this.luckywheelService.enterCodeGetTurn(body).subscribe(res => {
-      console.log(res);
-    })
   }
 
 }

@@ -42,7 +42,7 @@ export class LuckyWheelMainLayoutComponent implements OnInit {
   async showModalAdd() {
     const modal = await this.modalController.create({
       component: AddRollingTurnComponent,
-      cssClass: 'add-time-play-scan',
+      cssClass: 'add-times-play-scan',
     });
     return await modal.present();
   }
@@ -50,7 +50,7 @@ export class LuckyWheelMainLayoutComponent implements OnInit {
   async showModal() {
     const modal = await this.modalController.create({
       component: EnterCodeModalComponent,
-      cssClass: 'custom-class',
+      cssClass: 'enter-code-times-play',
       componentProps: {
         'campaignId': this.campaignId,
         'phone': this.phone
